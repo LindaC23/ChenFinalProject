@@ -193,6 +193,9 @@ public class Player implements KeyListener, ActionListener {
     @Override
     public void keyPressed(KeyEvent e) {
         int temp = e.getKeyCode();
+        if (temp == KeyEvent.VK_I){
+            gameBegun = !gameBegun;
+        }
         if (temp == KeyEvent.VK_ENTER) {
             gameBegun = true;
         }
